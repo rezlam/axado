@@ -6,7 +6,7 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Axado.Data.Entities;
+using Axado.Data.Models;
 
 namespace Axado.Persistence.Mapping
 {

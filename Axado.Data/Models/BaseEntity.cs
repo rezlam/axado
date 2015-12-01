@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Axado.Data.Entities
+namespace Axado.Data.Models
 {
     public abstract class BaseEntity
     {

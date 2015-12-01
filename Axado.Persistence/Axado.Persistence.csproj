@@ -51,7 +51,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AxadoContext.cs" />
+    <Compile Include="Mapping\AddressMap.cs" />
     <Compile Include="Mapping\BaseEntityMap.cs" />
+    <Compile Include="Mapping\CarrierMap.cs" />
+    <Compile Include="Migrations\201512010302201_AddModelCarrier.cs" />
+    <Compile Include="Migrations\201512010302201_AddModelCarrier.Designer.cs">
+      <DependentUpon>201512010302201_AddModelCarrier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512010330562_AddPropertyPickUpTimeToModelCarrier.cs" />
+    <Compile Include="Migrations\201512010330562_AddPropertyPickUpTimeToModelCarrier.Designer.cs">
+      <DependentUpon>201512010330562_AddPropertyPickUpTimeToModelCarrier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -65,8 +75,17 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\201512010302201_AddModelCarrier.resx">
+      <DependentUpon>201512010302201_AddModelCarrier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512010330562_AddPropertyPickUpTimeToModelCarrier.resx">
+      <DependentUpon>201512010330562_AddPropertyPickUpTimeToModelCarrier.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Schema\201512010302201_AddModelCarrier.sql" />
+    <Content Include="Schema\201512010330562_AddPropertyPickUpTimeToModelCarrier.sql" />
     <Content Include="Schema\_CreateSchema.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
