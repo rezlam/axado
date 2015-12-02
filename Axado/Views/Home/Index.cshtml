@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Axado.Data.Models.Carrier>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Carriers</h2>
+
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Locality</th>
+        <th>Region</th>
+        <th>Price per Km</th>
+        <th>Rating</th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>@Html.ActionLink(item.Name, "Details", new { id = item.Id })</td>
+        <td>@item.Code</td>
+        <td>@item.Address.Locality</td>
+        <td>@item.Address.Region)</td>
+        <td>@item.PricePerKm</td>
+        <td>@item.Ratings.Average(t => t.Rating)</td>
+    </tr>
+}
+
+</table>
