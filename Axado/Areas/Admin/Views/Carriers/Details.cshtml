@@ -1,0 +1,54 @@
+﻿@model Axado.Data.Models.Carrier
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Carrier</h4>
+    <hr />
+  <dl class="dl-horizontal">
+    <dt>@Html.DisplayNameFor(model => model.Name)</dt>
+    <dd>@Html.DisplayFor(model => model.Name)</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.Code)</dt>
+    <dd>@Html.DisplayFor(model => model.Code)</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.Identification)</dt>
+    <dd>@Html.DisplayFor(model => model.Identification)</dd>
+
+
+    <dt>@Html.DisplayNameFor(model => model.Address.StreetAddress)</dt>
+    <dd>@Html.DisplayFor(model => model.Address.StreetAddress)</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.Address.District)</dt>
+    <dd>@Html.DisplayFor(model => model.Address.District)</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.Address.Locality)</dt>
+    <dd>@Html.DisplayFor(model => model.Address.Locality)</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.Address.Region)</dt>
+    <dd>@Html.DisplayFor(model => model.Address.Region)</dd>
+
+
+    <dt>@Html.DisplayNameFor(model => model.PhoneNumber)</dt>
+    <dd>@Html.DisplayFor(model => model.PhoneNumber)</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.Url)</dt>
+    <dd>@Html.DisplayFor(model => model.Url)</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.PricePerKm)</dt>
+    <dd>@Html.DisplayFor(model => model.PricePerKm)</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.PickUpTime)</dt>
+    <dd>@Html.DisplayFor(model => model.PickUpTime)</dd>
+  </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.Id })
+</p>
+
+<p>@Html.ActionLink("Back to List", "Index")</p>

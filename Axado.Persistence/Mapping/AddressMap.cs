@@ -10,7 +10,7 @@ using Axado.Data.Models;
 
 namespace Axado.Persistence.Mapping
 {
-    public class AddressMap : EntityTypeConfiguration<Address>
+    public class AddressMap : ComplexTypeConfiguration<Address>
     {
         public AddressMap()
         {

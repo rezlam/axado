@@ -23,9 +23,9 @@
         <td>@Html.ActionLink(item.Name, "Details", new { id = item.Id })</td>
         <td>@item.Code</td>
         <td>@item.Address.Locality</td>
-        <td>@item.Address.Region)</td>
+        <td>@item.Address.Region</td>
         <td>@item.PricePerKm</td>
-        <td>@item.Ratings.Average(t => t.Rating)</td>
+        <td>@(item.Ratings.Count() > 0 ? item.Ratings.Average(t => t.Rating).ToString() : "-")</td>
     </tr>
 }
 

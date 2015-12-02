@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Axado.Data.Models
 {
+    [ComplexType]
     public class Address
     {
         public string StreetAddress { get; set; }
