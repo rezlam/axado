@@ -72,6 +72,10 @@
     <Compile Include="Migrations\201512020202585_AddModelCarrierRating.Designer.cs">
       <DependentUpon>201512020202585_AddModelCarrierRating.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512020252036_RemoveProprertyCountryFromModelAddress.cs" />
+    <Compile Include="Migrations\201512020252036_RemoveProprertyCountryFromModelAddress.Designer.cs">
+      <DependentUpon>201512020252036_RemoveProprertyCountryFromModelAddress.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -98,12 +102,16 @@
     <EmbeddedResource Include="Migrations\201512020202585_AddModelCarrierRating.resx">
       <DependentUpon>201512020202585_AddModelCarrierRating.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512020252036_RemoveProprertyCountryFromModelAddress.resx">
+      <DependentUpon>201512020252036_RemoveProprertyCountryFromModelAddress.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Schema\201512010302201_AddModelCarrier.sql" />
     <Content Include="Schema\201512010330562_AddPropertyPickUpTimeToModelCarrier.sql" />
     <Content Include="Schema\201512020046084_AddModelUser.sql" />
     <Content Include="Schema\201512020202585_AddModelCarrierRating.sql" />
+    <Content Include="Schema\201512020252036_RemoveProprertyCountryFromModelAddress.sql" />
     <Content Include="Schema\_CreateSchema.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -38,12 +38,6 @@ namespace Axado.Persistence.Mapping
                 .HasMaxLength(3)
                 .IsUnicode(false)
                 .IsRequired();
-
-            this.Property(t => t.Country)
-                .HasColumnName("country")
-                .HasMaxLength(2)
-                .IsUnicode(false)
-                .IsRequired();
         }
     }
 }

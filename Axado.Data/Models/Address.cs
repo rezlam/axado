@@ -12,6 +12,5 @@ namespace Axado.Data.Models
         public string District { get; set; }
         public string Locality { get; set; }
         public string Region { get; set; }
-        public string Country { get; set; }
     }
 }
