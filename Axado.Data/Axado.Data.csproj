@@ -42,6 +42,8 @@
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Carrier.cs" />
     <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\CarrierRating.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

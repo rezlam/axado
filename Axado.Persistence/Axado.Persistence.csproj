@@ -54,6 +54,7 @@
     <Compile Include="Mapping\AddressMap.cs" />
     <Compile Include="Mapping\BaseEntityMap.cs" />
     <Compile Include="Mapping\CarrierMap.cs" />
+    <Compile Include="Mapping\UserMap.cs" />
     <Compile Include="Migrations\201512010302201_AddModelCarrier.cs" />
     <Compile Include="Migrations\201512010302201_AddModelCarrier.Designer.cs">
       <DependentUpon>201512010302201_AddModelCarrier.cs</DependentUpon>
@@ -61,6 +62,10 @@
     <Compile Include="Migrations\201512010330562_AddPropertyPickUpTimeToModelCarrier.cs" />
     <Compile Include="Migrations\201512010330562_AddPropertyPickUpTimeToModelCarrier.Designer.cs">
       <DependentUpon>201512010330562_AddPropertyPickUpTimeToModelCarrier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512020046084_AddModelUser.cs" />
+    <Compile Include="Migrations\201512020046084_AddModelUser.Designer.cs">
+      <DependentUpon>201512020046084_AddModelUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,10 +87,14 @@
     <EmbeddedResource Include="Migrations\201512010330562_AddPropertyPickUpTimeToModelCarrier.resx">
       <DependentUpon>201512010330562_AddPropertyPickUpTimeToModelCarrier.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512020046084_AddModelUser.resx">
+      <DependentUpon>201512020046084_AddModelUser.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Schema\201512010302201_AddModelCarrier.sql" />
     <Content Include="Schema\201512010330562_AddPropertyPickUpTimeToModelCarrier.sql" />
+    <Content Include="Schema\201512020046084_AddModelUser.sql" />
     <Content Include="Schema\_CreateSchema.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

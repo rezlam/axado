@@ -19,6 +19,7 @@ namespace Axado.Persistence
 
 
         public DbSet<Carrier> Carriers { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -27,6 +28,7 @@ namespace Axado.Persistence
 
             modelBuilder.Configurations.Add(new AddressMap());
             modelBuilder.Configurations.Add(new CarrierMap());
+            modelBuilder.Configurations.Add(new UserMap());
         }
     }
 }
