@@ -16,5 +16,7 @@ namespace Axado.Data.Models
         public string Url { get; set; }
         public decimal PricePerKm { get; set; }
         public TimeSpan? PickUpTime { get; set; }
+
+        public virtual ICollection<CarrierRating> Ratings { get; set; }
     }
 }

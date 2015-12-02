@@ -29,6 +29,7 @@ namespace Axado.Persistence
             modelBuilder.Configurations.Add(new AddressMap());
             modelBuilder.Configurations.Add(new CarrierMap());
             modelBuilder.Configurations.Add(new UserMap());
+            modelBuilder.Configurations.Add(new CarrierRatingMap());
         }
     }
 }

@@ -59,6 +59,9 @@ namespace Axado.Persistence.Mapping
                 .HasColumnType("time")
                 .HasPrecision(0)
                 .IsOptional();
+
+            // Foreign keys
+            this.HasMany(t => t.Ratings);
         }
     }
 }
